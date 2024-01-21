@@ -1,19 +1,5 @@
 check50:
   checks:
-#    hello world:
-#      - run: python hello.py
-#        stdout: Hello, world!
-#        exit: 0
-#    c test output:
-#      #- run: ./ece177_check_output.sh hello.c
-#      - run: TERM=dumb gcc hello.c 2>&1 && ./a.out
-#        stdout: Hello, world!
-#        exit: 0
-#    c test warnings:
-#      #- run: ./ece177_check_warnings.sh hello.c
-#      - run: TERM=dumb gcc -Wall -Werror hello.c 2>&1 && ./a.out
-#        stdout: Hello, world!
-#        exit: 0
     Q1:
       - run: TERM=dumb cat hw1/q1.output.final | grep -E '^1,'
         stdout: 1,1,0b00000001,0x01,0b0000000000000001,0x0001
